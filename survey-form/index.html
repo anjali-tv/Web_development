@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name" />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="age" id="number-label">Age (Optional)</label>
+        <input type="number" id="number" min="10" max="99" placeholder="age" />
+
+        <label>Which option best describes your current role?</label>
+        <select id="dropdown" placeholder="select current role">
+          <option disabled selected value>Select current role</option>
+          <option>Student</option>
+          <option>Full Time job</option>
+          <option>Full Time learner</option>
+          <option>Prefer not to say</option>
+          <option>other</option>
+        </select>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+
+        <label
+          ><input
+            type="radio"
+            class="inline"
+            name="user-recommend"
+            value="Definitely"
+          />Definitely</label
+        >
+
+        <label
+          ><input
+            type="radio"
+            name="user-recommend"
+            class="inline"
+            value="Maybe"
+          />Maybe</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="user-recommend"
+            class="inline"
+            value="Maybe"
+          />Maybe</label
+        >
+
+        <label>What is your favorite feature of freeCodeCamp?</label>
+        <select id="favorite" placeholder="select an option">
+          <option disabled selected value>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open source</option>
+        </select>
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Front-end Projects</label
+        >
+
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Back-end Projects</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Data Visualization</label
+        ><label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Challenges</label
+        ><label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Open Source Community</label
+        ><label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Gitter help rooms</label
+        ><label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Videos</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />City Meetups</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Wiki</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Forum</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            value="Front-end Projects"
+            name="prefer"
+          />Additional Courses</label
+        >
+        <label>Any comments or suggestions?</label>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          rows="5"
+          cols="89"
+          placeholder="Enter your comment here..."
+        ></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
