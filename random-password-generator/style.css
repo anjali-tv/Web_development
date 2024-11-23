@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #002339;
+  color: #fff;
+}
+.container {
+  margin: 12%;
+  width: 90%;
+  max-width: 650px;
+}
+
+.display {
+  align-items: center;
+  justify-content: space-between;
+}
+#password-properties {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #019f55;
+}
+.display,
+#password-properties {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  display: flex;
+  padding: 26px 20px;
+  border-radius: 5px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#password-properties div {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+#password-properties #pw-length {
+  margin-bottom: 10px !important;
+}
+
+#password-properties div label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#password-properties div input {
+  font-size: 24px;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #55555526;
+  color: #000000;
+}
+.check-boxes {
+  padding-bottom: 10px;
+}
+.check-boxes input {
+  height: 20px;
+}
+.check-boxes input:checked {
+  accent-color: #002339;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.container h1 span {
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+
+.display img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.display input {
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
+
+.container button img {
+  width: 28px;
+  margin-left: 10px;
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background: #019f55;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
