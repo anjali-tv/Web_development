@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #faf9f6;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+h2 {
+  text-align: center;
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  /* background: linear-gradient(135deg, #00feba, #5b548a); */
+  color: #faf9f6;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgb(164 125 191) 0%,
+    rgba(92, 57, 119, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search input {
+  /* border: 0;
+    outline: 0;
+    background: #ebfffc;
+    /* padding: 10px; */
+  /* width: 100%; */
+  /* height: 60px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-right: 16px;
+    flex: 1;
+    font-size: 18px;  */
+  border-bottom: 1px solid #9e9393;
+  outline: 0;
+  background: transparent;
+
+  /* padding: 10px; */
+  width: 100%;
+  height: 60px;
+  /* border-radius: 5px; */
+  padding: 10px 25px;
+  margin-right: -13px;
+  /* flex: 1; */
+  font-size: 18px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #faf9f6;
+}
+.search input::placeholder {
+  color: #faf9f6;
+}
+.search button {
+  /* background: transparent; */
+  border: none;
+  position: absolute;
+  right: 4px;
+  /* top: 4px; */
+  background-color: #513269;
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  outline: 0;
+  cursor: pointer;
+}
+.search button .fa-magnifying-glass::before {
+  font-size: 18px;
+}
+
+.weather .weather-icon {
+  width: 265px;
+  margin-top: -10px;
+  margin-bottom: -24px;
+}
+
+.weather h1 {
+  font-size: 72px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 30px;
+  font-weight: 400;
+  /* margin-top: -10px; */
+}
+.weather h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.weather h4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #9e9393;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 20px; */
+  margin-top: 25px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-radius: 14px;
+  background: #513269;
+  padding: 16px;
+  width: 47%;
+}
+.col img {
+  width: 30px;
+  margin-right: 20px;
+}
+.col #humidity-image {
+  width: 25px;
+}
+/* hr{
+    margin-top: 18px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+} */
+.forecast {
+  width: 100%;
+  background: #513269;
+  height: 100px;
+  margin-top: 12px;
+  border-radius: 14px;
+  color: #faf9f6;
+  /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+/* //slider */
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.slider-arrows span {
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* padding: 10px; */
+}
+
+.hourly-forecast-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 18px;
+  background: #513269;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+.hourly-forecast {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.hour-block {
+  min-width: 18%; /* Show 4 hours at a time */
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.weather-details {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.weather-property {
+  color: #9e9393;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.feeling-temp,
+.uv,
+.humidity,
+.wind-speed,
+.sunrise,
+.sunset,
+.pressure,
+.visibility,
+.forecast-temperature {
+  font-weight: 600;
+  font-size: 18px;
+}
+p.forecast-time {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.weather {
+  display: none;
+}
+.error {
+  text-align: left !important;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}

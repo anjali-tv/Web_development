@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h2>Weather app</h2> -->
+      <div class="card">
+        <div class="search">
+          <input
+            type="text"
+            id=""
+            placeholder="Enter city name"
+            spellcheck="false"
+          />
+          <button type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="error">
+          <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+          <h3 class="condition"></h3>
+          <img
+            src="/rainy-weather-3d-rendering-isolated-on-transparent-background-ui-ux-icon-design-web-and-app-trend-png.webp"
+            class="weather-icon"
+          />
+          <!-- <img src="" class="weather-icon"> -->
+          <!-- //cdn.weatherapi.com/weather/64x64/night/116.png -->
+          <h1 class="temp"></h1>
+          <h2 class="city"></h2>
+          <h4 class="date"></h4>
+
+          <div class="hourly-forecast-wrapper">
+            <div class="hourly-forecast" id="hourly-forecast">
+              <!-- Hourly data will be appended here -->
+            </div>
+            <div class="slider-arrows">
+              <span id="prevArrow">&#8592;</span>
+              <span id="nextArrow">&#8594;</span>
+            </div>
+          </div>
+          <div class="details">
+            <div class="col">
+              <img src="/icons8-temperature-48.png" alt="" id="feeling-temp" />
+              <div>
+                <p class="weather-property">Feels like</p>
+                <p class="feeling-temp"></p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="/icons8-sunlight-50.png" alt="" id="uv" />
+              <div>
+                <p class="weather-property">UV</p>
+                <p class="uv"></p>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="col">
+              <img src="/dewpoint.png" alt="" id="humidity-image" />
+              <div>
+                <p class="weather-property">Humidity</p>
+                <p class="humidity"></p>
+              </div>
+            </div>
+
+            <div class="col">
+              <img src="/weather.png" alt="" id="wind-image" />
+              <div>
+                <p class="weather-property">Wind Speed</p>
+                <p class="wind-speed"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="col">
+              <img src="/icons8-visible-64.png" alt="" id="visibility" />
+              <div>
+                <p class="weather-property">Visibility</p>
+                <p class="visibility">15km/h</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="/icons8-air-pressure-32.png" alt="" id="pressure" />
+              <div>
+                <p class="weather-property">Pressure</p>
+                <p class="pressure">50%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="col">
+              <img src="/icons8-sunrise-48 (1).png" alt="" id="sunrise" />
+              <div>
+                <p class="weather-property">Sunrise</p>
+                <p class="sunrise"></p>
+              </div>
+            </div>
+
+            <div class="col">
+              <img src="/icons8-sunset-48 (1).png" alt="" id="sunset" />
+              <div>
+                <p class="weather-property">Sunset</p>
+                <p class="sunset"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
