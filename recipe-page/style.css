@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F3E5D8;
+    width: 1440px;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height:1600px;
+}
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 70px;
+    padding-top: 50px;
+    border-radius: 20px;
+}
+h1{
+    margin:25px 0;
+    padding-left:40px;
+}
+.p1{
+    /* font-family: "Outfit"; */
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    margin: 16px 0;
+}
+.second{
+    background-color: hsl(330, 100%, 98%);
+    width: 90%;
+    padding: 0;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+.p2{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: hsl(332, 51%, 32%);
+    font-family: "young serif";
+    font-size: 20px;
+}
+.preparation-time {
+    margin: 10px 0;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    list-style: disc;
+}
+.p3{
+    font-family: "young serif";
+    font-size: 24px;
+    color: hsl(14, 45%, 36%);
+    padding-left: 40px;
+    margin: 24px 0;
+}
+.ingredients, .instructions{
+    /* margin-left: 20px; */
+    /* font-family: "Outfit"; */
+    /* color: hsl(14, 45%, 36%); */
+    margin: 16px 0px 16px 20px;
+    padding-left: 40px;
+}
+.ingredients-lists, .instructions-lists{
+    padding-left: 15px;
+    line-height: 1.5;
+    color: hsl(24, 5%, 18%);
+}
+.lines{
+    color: hsl(24, 10%, 70%);
+    width: 90%;
+    margin:8px 35.8px;
+}
+.inst-steps{
+    font-weight: bold;
+    color: hsl(24, 5%, 18%);
+}
+.table{
+    /* font-family: "outfit"; */
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    padding-left: 40px;
+    line-height: 1.5;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+.nutrient-value{
+    font-weight: bold;
+}
