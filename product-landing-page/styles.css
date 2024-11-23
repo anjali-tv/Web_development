@@ -1,0 +1,232 @@
+:root{
+    --white:#ffffff;
+    --text:#6c7289;
+    --pale:#f2ebe3;
+    --blue:hsl(224, 49%, 40%);
+    --header-text:hsl(212, 25%, 24%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--pale);
+}
+#header-img{
+    width:100px;
+    object-fit: contain;
+
+}
+#navbar{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: var(--white);
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color:var(--text);
+    padding: 0 10px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.the-product{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+#email-section{
+    margin-top:150px;
+}
+
+input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+
+#submit{
+    background-color:var(--blue);
+    color:var(--white);
+    cursor: pointer;
+}
+
+section::before{
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height:100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section{
+    margin:40px 20px;
+    text-align: center;
+}
+h2{
+    font-family:'fraunces';
+    margin-bottom: 10px;
+}
+.icon{
+    color:var(--blue);
+    margin-right:30px;
+}
+#features{
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+
+}
+#video{
+    width:100%;
+}
+
+.product-image{
+    width:100%;
+    margin: auto;
+    height: 500px;
+    border:1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1{
+    background-image: url(https://www.studypool.com/images/studyGuides/How_to_Win_Friends_and_Influence_People/Book_Cover.jpg);
+}
+
+.product2{
+    background-image: url(https://m.media-amazon.com/images/I/81Ls+SBCLiL._AC_UF1000,1000_QL80_.jpg);
+}
+
+.product3{
+    background-image: url(https://bookkish.com/cdn/shop/products/F6FcCCQ_488x.jpg?v=1613326414);
+}
+
+.card{
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.inner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content{
+    font-family: 'montserrat';
+    color: var(--text);
+    margin-bottom : 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-price{
+    margin-right: 20px;
+    font-size: 30px;
+    font-family:'fraunces';
+    color:var(--blue);
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: var(--text);
+}
+
+.author{
+    font-family: 'montserrat';
+    letter-spacing: 5px;
+    color: var(--text);
+    text-transform: uppercase;
+}
+.header{
+    font-family:'fraunces';
+    margin: 10px 0;
+    color: var(--header-text);
+}
+
+.add{
+    background-color: var(--blue);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white);
+    font-family: 'montserrat';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (min-width:600px) {
+    #navbar{
+        flex-direction: row;
+    }
+}
+@media only screen and (450px <= width){
+    .card{
+        display: flex;
+        max-width: 525px;
+        width: 100% !important;
+    }
+    .inner-card{
+        width:300px;
+        padding:20px;
+    }
+    .product-image{
+        width:400px;
+        border-radius:10px 0 0 10px;
+    }
+}
+
+@media only screen and (width >=1000px){
+    #video{
+        width:70%;
+    }
+    .product-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
