@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Application - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <p id="logo">
+          <a href="index.html">
+            <img src="images/icon-green 1.png" alt="Logo" />
+            <span id="brand">Nuxtcipes</span>
+          </a>
+        </p>
+        <p><a href="./index.html" class="home">Home</a></p>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Master the Kitchen with Ease: Unleash Your Inner Chef Today!</h1>
+        <p>Discover recipes helping you to find the easiest way to cook.</p>
+        <div id="button">
+          <a href="#recipe-list-section" class="hero-button browse"
+            >Browse Recipes</a
+          >
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="images/nuxt-course-hero.Dfy7_sV7 1.png"
+          alt="Delicious food"
+        />
+      </div>
+    </section>
+
+    <section class="recipe-list" id="recipe-list-section">
+      <div id="recipe-list-header">
+        <h3>Discover, Create, Share</h3>
+        <p>Check out our most popular recipes!</p>
+      </div>
+      <div class="list-body grid-container" id="recipes"></div>
+    </section>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
