@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  /* max-width: 1440px; */
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+  border-bottom: 1px solid #e5e7eb;
+}
+p#logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+p#logo a span {
+  font-size: 30px;
+}
+p#logo a span,
+.home {
+  color: #000;
+  font-weight: 400;
+}
+.home {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#single-recipe-container {
+  padding: 50px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 54%;
+}
+#single-recipe-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.single-recipe-details {
+  border-bottom: 1px solid #e5e7eb;
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.single-recipe-detail {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+.single-recipe-detail span {
+  font-size: 20px;
+  color: #000;
+}
+
+#single-recipe-name {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #000;
+}
+#ingredients {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 2fr 2fr;
+  margin: 20px 0px;
+  gap: 15px;
+}
+.ingredient-item label {
+  color: #000;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Makes the checkbox round */
+  border: 2px solid #f79f1a; /* Border (inside stroke) */
+  background-color: #fff; /* Background color */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Style for checked state */
+input[type="checkbox"]:checked {
+  /* background-color: #4CAF50; Checked background color */
+  border-color: #f79f1a; /* Match stroke color to background */
+}
+
+/* Optional: Add a checkmark */
+input[type="checkbox"]:checked::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #f79f1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #000; /* Optional: Dim the text color */
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.details-heading {
+  font-size: 30px;
+  margin-top: 45px;
+}
+
+#instructions {
+  margin: 20px 0px 20px 20px;
+}
+
+ol {
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  /* *list-style: decimal; Keep using default numbering for IE6/7 */
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.rounded-list span {
+  position: relative;
+  display: block;
+  padding: 0px 0px 0px 25px;
+  margin: 0.5em 0;
+  /* background: #ddd; */
+  color: #000;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-size: 18px;
+  transition: all 0.3s ease-out;
+}
+
+li {
+  padding-bottom: 6px;
+}
+.rounded-list span:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.6em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #f79f1a;
+  height: 28px;
+  width: 28px;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all 0.3s ease-out;
+  font-size: 14px;
+  color: #fff;
+}
+.back-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f79f1a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 16px 30px !important;
+  }
+  #single-recipe-container {
+    padding: 90px 30px;
+    width: 100%;
+  }
+  #single-recipe-name {
+    font-size: 36px;
+  }
+  #ingredients {
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  #single-recipe-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+  #single-recipe-container {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  #single-recipe-image {
+    width: 100%;
+    object-fit: contain;
+    height: 350px;
+  }
+  #ingredients {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 20px 0px 30px 0px;
+  }
+  .ingredient-item {
+    align-items: center;
+  }
+  .single-recipe-details {
+    margin-bottom: 0px;
+  }
+  /* .details-heading{
+        margin-top: 0px;
+    } */
+  .single-recipe-detail span {
+    font-size: 18px;
+  }
+  #logo span#brand {
+    display: none;
+  }
+}
